@@ -3,11 +3,11 @@
 namespace Autoscar;
 
 /**
- * AutoscarAPI API v1.
+ * Autoscar API v1.
  *
  * TERMS OF USE:
  * - This code is in no way affiliated with, authorized, maintained, sponsored
- *   or endorsed by AutoscarAPI or any of its affiliates or subsidiaries. This is
+ *   or endorsed by Autoscar or any of its affiliates or subsidiaries. This is
  *   an independent and unofficial API. Use at your own risk.
  * - We do NOT support or tolerate anyone who wants to use this API to send spam
  *   or commit other online crimes.
@@ -83,7 +83,7 @@ class Autoscar {
         curl_close($this->mCurl);
 
         //DOM Resp
-        $oDom = new \AutoscarAPI\simple_html_dom();
+        $oDom = new \Autoscar\simple_html_dom();
         $oDom->load($page);
 
             $dados = [
