@@ -1,12 +1,12 @@
 <?php
-namespace AutoscarAPI;
+namespace Autoscar;
 
 class Request
 {
     /**
-     * The AutoscarAPI class instance we belong to.
+     * The Autoscar class instance we belong to.
      *
-     * @var \AutoscarAPI\AutoscarAPI
+     * @var \Autoscar\Autoscar
      */
     protected $_parent;
  
@@ -203,7 +203,7 @@ class Request
         if($this->_fields == 'dump')
         {
             //DOM Resp
-            $oDom = new \AutoscarAPI\simple_html_dom();
+            $oDom = new \Autoscar\simple_html_dom();
             $oDom->load($resp);
             $arrFields['dump'] = $oDom->dump();
         }
@@ -211,7 +211,7 @@ class Request
         if(isset($this->_fields) && sizeof($this->_fields) > 0)
         {
             //DOM Resp
-            $oDom = new \AutoscarAPI\simple_html_dom();
+            $oDom = new \Autoscar\simple_html_dom();
             $oDom->load($resp);
             foreach($this->_fields as $field){
                 $arrFields[$field['desc']] = $oDom->find('['.$field['type'].'="'.$field['desc'].'"]',0)->value;
