@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace AutoscarAPI;
+namespace Autoscar;
 
 /**
  * Website: http://sourceforge.net/projects/simplehtmldom/
