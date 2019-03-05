@@ -1,5 +1,5 @@
 <?php
-namespace AutoscarAPI;
+namespace Autoscar;
 
 
 class Utils
