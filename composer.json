@@ -1,0 +1,11 @@
+{
+    "name": "veloccer/autoscar",
+    "description": "Autoscar Private",
+    "autoload": {
+       "psr-4": {
+           "Autoscar\\": "src"
+       }
+   }
+}
+
+
